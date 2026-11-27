@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#84133f"><title>Bhagavan Fancy</title>
+<meta name="description" content="Jewellery, accessories, makeup and gifts. Order online with UPI, card or cash on delivery.">
+<style>
+:root{--wine:#84133f;--gold:#c89a45;--pink:#fff2f5;--ink:#302830;--line:#eee4e9}*{box-sizing:border-box}body{margin:0;font:15px Arial,sans-serif;color:var(--ink)}button,input,select,textarea{font:inherit}button{cursor:pointer}.top{background:var(--wine);color:white;text-align:center;padding:9px;font-size:13px}header{display:flex;align-items:center;gap:20px;padding:16px 5%;border-bottom:1px solid var(--line);position:sticky;top:0;background:white;z-index:4}.brand{min-width:230px;display:flex;align-items:center;gap:10px;text-decoration:none;color:inherit}.logo{border:2px solid var(--gold);color:var(--gold);border-radius:50%;width:46px;height:46px;display:grid;place-items:center;font-size:27px}.brand b{font: bold 26px Georgia;color:var(--wine)}.brand small{display:block;color:#777;font-family:Georgia}.search{display:flex;flex:1}.search input{flex:1;min-width:0;padding:12px;border:1px solid #ddd;border-radius:25px 0 0 25px;font-size:16px}.search button,.btn{background:var(--wine);color:white;border:0;padding:12px 20px;border-radius:0 25px 25px 0}.actions{display:flex;gap:14px}.actions button{border:0;background:none}.hero{max-width:1400px;margin:auto;background:linear-gradient(100deg,#fff2f5,#f7e1e8);padding:45px 7%;display:grid;grid-template-columns:1fr 1fr;align-items:center;min-height:300px}.hero h1{font: bold clamp(36px,5vw,58px)/1.08 Georgia;color:var(--wine);margin:10px 0}.hero p{line-height:1.7}.art{font-size:100px;text-align:center;background:radial-gradient(circle,#fff 0,#f5dce5 65%,transparent 66%);padding:50px}.btn{border-radius:25px;margin-top:12px}.wrap{max-width:1250px;margin:auto;padding:30px 22px}.head{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}.head h2{font: bold 27px Georgia;color:var(--wine);margin:0}.cats{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}.cat{text-align:center;border:1px solid var(--line);border-radius:14px;padding:15px 5px;cursor:pointer;background:white;color:inherit}.cat i{display:grid;place-items:center;margin:auto auto 9px;width:68px;height:68px;border-radius:50%;background:var(--pink);font-style:normal;font-size:32px;overflow:hidden}.tools{display:flex;gap:10px;margin:16px 0}.tools input,.tools select{padding:11px;border:1px solid var(--line);border-radius:9px;font-size:16px}.tools input{flex:1}.products{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.product{border:1px solid var(--line);border-radius:13px;overflow:hidden;position:relative;background:white}.pic{height:175px;background:linear-gradient(135deg,#fff2ec,#f5e1e8);display:grid;place-items:center;font-size:65px;overflow:hidden;border:0;width:100%;padding:0}.details{padding:13px}.details h3{font-size:15px;margin:0 0 8px}.muted{color:#777;font-size:12px}.price{color:var(--wine);font-weight:bold;margin:10px 0}.add{width:100%;border:0;border-radius:8px;background:var(--wine);color:white;padding:10px}.benefits{display:grid;grid-template-columns:repeat(4,1fr);background:var(--pink);padding:23px 5%;text-align:center}.benefits b{display:block;color:var(--wine);margin:6px}footer{background:#64102f;color:white;padding:30px 6%;display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr;gap:20px}footer a,footer .fl{display:block;color:#f7e7ed;text-decoration:none;margin:9px 0;font-size:13px;background:none;border:0;padding:0;text-align:left}footer .fl{cursor:pointer}.copy{text-align:center;background:#f8eadb;padding:12px;font-size:12px}.float{position:fixed;right:16px;bottom:16px;border:0;border-radius:28px;background:var(--wine);color:white;padding:14px 20px;z-index:5}.overlay{display:none;position:fixed;inset:0;background:#0006;z-index:8}.drawer{background:white;position:absolute;right:0;top:0;height:100%;width:min(430px,100%);padding:20px;overflow:auto}.line{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding:13px 0;gap:8px}.drawer button{padding:8px;border-radius:7px;border:1px solid var(--line);background:white}.drawer .wide{width:100%;padding:13px;margin-top:10px;background:var(--wine);color:white;border:0}.drawer .wa{background:#fff;color:#167c43;border:1px solid #167c43}.total{font-size:19px;font-weight:bold;display:flex;justify-content:space-between;padding:15px 0}
+@media(max-width:850px){header{flex-wrap:wrap;padding:12px 4%}.brand{flex:1;min-width:0}.brand b{font-size:21px}.search{order:3;flex-basis:100%}.hero{grid-template-columns:1fr;text-align:center;padding:30px 6%}.art{font-size:70px;padding:20px}.cats{grid-template-columns:repeat(3,1fr)}.products{grid-template-columns:repeat(2,1fr)}.pic{height:140px}.benefits{grid-template-columns:repeat(2,1fr);gap:15px}footer{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.wrap{padding:24px 13px}.actions{gap:4px}.actions button{font-size:12px}.hero h1{font-size:36px}.cats{gap:8px}.cat{padding:10px 3px;font-size:12px}.cat i{width:56px;height:56px;font-size:26px}.products{gap:9px}.pic{height:115px;font-size:50px}.details{padding:9px}.details h3{font-size:13px}.tools{flex-wrap:wrap}.tools input{flex-basis:100%}footer{padding:25px 16px}}
+
+/* added so the page works for real */
+[hidden]{display:none!important}
+body.lock{overflow:hidden}
+nav{display:flex;gap:25px;padding:14px;border-bottom:1px solid #eee;overflow:auto;white-space:nowrap}nav a:first-child{margin-left:auto}nav a:last-child{margin-right:auto}nav a{color:inherit;text-decoration:none;flex:0 0 auto}nav a.on{color:var(--wine);font-weight:bold}
+.pic img{width:100%;height:100%;object-fit:cover;display:block}
+.pic .ph{color:var(--gold);font-size:56px}
+.cat.on{border-color:var(--wine);background:var(--pink)}
+.cat i img{width:100%;height:100%;object-fit:cover}
+.cat i b{font:bold 28px Georgia;color:var(--wine)}
+.heart{position:absolute;top:8px;right:8px;z-index:2;width:36px;height:36px;border-radius:50%;border:0;background:#fff;color:var(--wine);font-size:19px;display:grid;place-items:center;box-shadow:0 1px 6px #0003;padding:0}
+.prow{display:flex;gap:4px 8px;align-items:baseline;flex-wrap:wrap;margin:10px 0}
+.prow .price{margin:0}.prow s{color:#888;font-size:13px}
+.off{background:#fde3ea;color:#a0123f;font-size:11px;font-weight:bold;padding:2px 8px;border-radius:99px;white-space:nowrap}
+.add[disabled]{background:#ccc;cursor:not-allowed}
+.step{display:flex;align-items:center;justify-content:space-between;border:1px solid var(--wine);border-radius:8px;color:var(--wine);font-weight:bold}
+.step button,.drawer .step button{width:44px;height:38px;border:0;background:none;font-size:20px;color:var(--wine);padding:0}
+.sk .pic{background:linear-gradient(100deg,#f5e8ee 30%,#fff7fa 50%,#f5e8ee 70%);background-size:300% 100%;animation:sh 1.4s linear infinite}
+.sk i{display:block;height:12px;border-radius:6px;background:#f2e6ec;margin:12px 13px 0;width:70%}.sk i+i{width:40%;margin-bottom:16px}
+@keyframes sh{to{background-position:-150% 0}}
+.msgbox{grid-column:1/-1;text-align:center;padding:50px 16px;color:#777}.msgbox h3{font:bold 22px Georgia;color:var(--wine);margin:0 0 6px}
+.slider{position:relative;max-width:1400px;margin:auto}
+.slides{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}.slides::-webkit-scrollbar{display:none}
+.slide{flex:0 0 100%;scroll-snap-align:start;aspect-ratio:2/1;border:0;padding:0;background:var(--pink);display:block}
+@media(min-width:860px){.slide{aspect-ratio:3/1}}
+.slide img{width:100%;height:100%;object-fit:cover;display:block}
+.dots{position:absolute;left:0;right:0;bottom:8px;display:flex;justify-content:center;gap:6px;pointer-events:none}
+.dots button{width:8px;height:8px;border-radius:4px;border:0;background:#fffc;padding:0;box-shadow:0 0 0 1px #0004;pointer-events:auto}
+.dots button.on{background:var(--wine);width:22px}
+.fnote{display:inline-flex;gap:8px;align-items:center;color:var(--wine);font-size:13px;font-weight:bold}.fnote button{border:0;background:none;color:var(--wine);text-decoration:underline;padding:0}
+.f{margin:10px 0}.f label{display:block;font-size:13px;font-weight:bold;margin-bottom:5px}
+.f input,.f textarea{width:100%;padding:12px;border:1px solid #ddd;border-radius:9px;font-size:16px;font-family:inherit}
+.f .err{display:none;color:#b3261e;font-size:12.5px;margin-top:4px}.f.bad .err{display:block}.f.bad input,.f.bad textarea{border-color:#b3261e}
+.drawer h3{font:bold 15px Georgia;color:var(--wine);margin:20px 0 4px}
+.pay{display:flex;gap:10px;align-items:flex-start;padding:12px;border:1px solid var(--line);border-radius:10px;margin:8px 0;cursor:pointer}
+.pay:has(input:checked){border-color:var(--wine);background:var(--pink)}.pay input{margin-top:3px;accent-color:var(--wine);width:18px;height:18px}
+.pay b{display:block}.pay small{color:#777}
+.sum{margin-top:14px;padding:12px 14px;background:var(--pink);border-radius:10px}.sum div{display:flex;justify-content:space-between;padding:3px 0}
+.sum .t{font-weight:bold;font-size:18px;border-top:1px dashed #d9c3cc;margin-top:6px;padding-top:9px}
+.nudge{background:#f8eadb;border-radius:8px;padding:9px 12px;font-size:13px;margin-top:12px}
+.rm{border:0!important;background:none!important;color:#777;text-decoration:underline;font-size:12px;padding:0!important}
+.okmark{width:56px;height:56px;border-radius:50%;background:#dff3e7;color:#167c43;display:grid;place-items:center;font-size:28px;margin:10px auto 12px}
+.drawer .center{text-align:center}
+.toast{position:fixed;left:50%;bottom:78px;transform:translate(-50%,14px);opacity:0;pointer-events:none;background:#302830;color:#fff;padding:11px 16px;border-radius:10px;font-size:14px;z-index:20;transition:.2s;max-width:92vw;white-space:nowrap}.toast.show{opacity:1;transform:translate(-50%,0)}
+.ord{border-bottom:1px solid var(--line);padding:12px 0;font-size:14px}.ord .r{display:flex;justify-content:space-between;gap:8px}.chip{display:inline-block;background:#f3e6ec;color:var(--wine);font-size:12px;font-weight:bold;padding:2px 9px;border-radius:99px}.chip.ok{background:#dff3e7;color:#167c43}.chip.bad{background:#fde3e0;color:#a3261b}.gbtn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:13px;border:1px solid #ccc!important;border-radius:8px;background:#fff;font-weight:bold;margin-top:14px}.about{background:#fff;text-align:center}.about p{max-width:60ch;margin:6px auto 0;color:#666;line-height:1.6}
+</style>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head><body>
+<div class="top">✦ Welcome to Bhagavan Fancy — Little Accessories, Big Happiness! ✦</div>
+<header><a class="brand" href="#" data-act="home"><div class="logo">❀</div><div><b>Bhagavan Fancy</b><small>Elegance in Every Detail ♡</small></div></a><div class="search"><input id="search" placeholder="Search studs, chains, makeup..." aria-label="Search products"><button data-act="search">Search</button></div><div class="actions"><button data-act="account" id="acctBtn">♙ Login</button><button data-act="wishlist">♡ Wishlist <span id="wcount"></span></button><button data-act="cart">🛒 Cart <span id="count">0</span></button></div></header>
+<nav id="mainnav"></nav>
+
+<div class="slider" id="bannerWrap" hidden><div class="slides" id="slides"></div><div class="dots" id="dots"></div></div>
+<section class="hero" id="hero"><div><span style="color:var(--gold);letter-spacing:2px">YOUR EVERYDAY FANCY DESTINATION</span><h1>Little Accessories.<br>Big Happiness!</h1><p>Jewellery • Accessories • Makeup • Gifts<br>Find something special for every day and every occasion.</p><button class="btn" data-act="shop">Explore Collections →</button></div><div class="art">💎 🌸 🎁</div></section>
+
+<main><section class="wrap" id="categories"><div class="head"><h2>Shop by Category</h2><span class="muted">Find your favourites</span></div><div class="cats" id="cats"></div></section>
+<section class="wrap" id="products"><div class="head"><h2 id="ptitle">Popular Products</h2><span class="muted" id="result"></span></div>
+<div class="tools"><input id="filter" placeholder="Search products..." aria-label="Filter products"><select id="catfilter" aria-label="Category"><option value="">All categories</option></select><select id="sort" aria-label="Sort"><option value="">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select></div>
+<div class="products" id="grid" aria-live="polite"></div></section></main>
+
+<section class="benefits"><div>🚚<b>Delivery Support</b><span class="muted" id="bDel"></span></div><div>🔒<b>Secure Shopping</b><span class="muted">UPI, card or cash on delivery</span></div><div>🎁<b>Gift-ready Finds</b><span class="muted">Make every moment special</span></div><div>💬<b>Friendly Support</b><span class="muted">We're happy to help</span></div></section>
+<section class="wrap about" id="about"><div class="head" style="justify-content:center"><h2>About Us</h2></div><p id="aboutText"></p></section>
+
+<footer id="footer"><div><h2 style="font:26px Georgia">❀ Bhagavan Fancy</h2><p>Elegance in Every Detail ♡<br>Jewellery, accessories, beauty essentials and gifts for every occasion.</p></div><div><b>Quick Links</b><button class="fl" data-act="home">Home</button><button class="fl" data-act="shop">Shop</button><button class="fl" data-act="goto" data-to="categories">Categories</button></div><div><b>Categories</b><div id="footCats"></div></div><div><b>Contact Us</b><a id="callFoot" href="#"></a><a id="waFoot" href="#" target="_blank" rel="noopener">Chat on WhatsApp</a><a id="mailFoot" href="#" hidden></a><p id="footPlace"></p></div></footer><div class="copy" id="legal"></div>
+<button class="float" data-act="cart">🛒 View Cart (<span id="floatcount">0</span>)</button>
+<div class="toast" id="toast" role="status"></div>
+
+<div class="overlay" id="overlay" data-act="overlay"><div class="drawer" role="dialog" aria-modal="true" aria-labelledby="dTitle"><div style="display:flex;justify-content:space-between;align-items:center"><h2 id="dTitle" style="color:var(--wine);margin:0">Your Cart</h2><button data-act="close" aria-label="Close">✕</button></div><div id="dBody"></div></div></div>
+
+<script type="module">
+import {initializeApp} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import {getFirestore, collection, onSnapshot, addDoc, updateDoc, setDoc, doc, serverTimestamp, query, where, getDocs} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+import {getAuth, GoogleAuthProvider, signInWithPopup, onAuthStateChanged, signOut} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+/* ===== EDIT THIS SECTION ===== */
+const SHOP_NAME  = "Bhagavan Fancy";
+const SHOP_PLACE = "Attur, Tamil Nadu";
+const ABOUT_TEXT = "Bhagavan Fancy brings you jewellery, accessories, makeup and gifts from our family store in Attur, Tamil Nadu. Order online and we deliver to your door.";
+const WHATSAPP   = "919489190666";                 // your number with 91, no + or spaces (also used for Call)
+const SHOP_EMAIL = "";                             // optional
+const RAZORPAY_KEY_ID = "rzp_test_xxxxxxxxxxxx";   // Razorpay Key ID (test first, then live)
+const DELIVERY_CHARGE = 40;
+const FREE_DELIVERY_ABOVE = 499;
+const firebaseConfig = {
+  apiKey: "AIzaSyAKcuQ7nfFIXl_N0-7JJLXUwfaLh4XzIDA",
+  authDomain: "bhagavanimit.firebaseapp.com",
+  projectId: "bhagavanimit",
+  storageBucket: "bhagavanimit.firebasestorage.app",
+  messagingSenderId: "267390798729",
+  appId: "1:267390798729:web:768d483367cc853ff42f58"
+};
+/* ===== END EDIT SECTION ===== */
+
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const money = n => "₹" + Number(n || 0).toLocaleString("en-IN");
+const store = {
+  get(k, d) { try { const v = localStorage.getItem(k); return v === null ? d : JSON.parse(v); } catch (e) { return d; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+};
+const DEFAULT_CATS = [["Studs","✨"],["Chains","📿"],["Anklets","〰️"],["Bindi","🔴"],["Makeup","💄"],["Gifts","🎁"]];
+const state = {products: [], categories: [], banners: [], cart: store.get("cart", {}), wish: store.get("wish", []), cat: "", offers: false, loaded: false, mode: "cart", user: null};
+const find = id => state.products.find(p => p.id === id);
+const qty = id => state.cart[id] || 0;
+const discount = p => p.mrp > p.price ? Math.round((1 - p.price / p.mrp) * 100) : 0;
+const sub = () => Object.keys(state.cart).reduce((s, id) => s + (find(id)?.price || 0) * state.cart[id], 0);
+const delivery = () => { const s = sub(); return s === 0 || s >= FREE_DELIVERY_ABOVE ? 0 : DELIVERY_CHARGE; };
+const itemCount = () => Object.values(state.cart).reduce((a, b) => a + b, 0);
+const waLink = t => "https://wa.me/" + WHATSAPP + (t ? "?text=" + encodeURIComponent(t) : "");
+
+/* ---------- static text ---------- */
+$("bDel").textContent = `Free above ${money(FREE_DELIVERY_ABOVE)}`;
+$("aboutText").textContent = ABOUT_TEXT;
+$("footPlace").textContent = SHOP_PLACE;
+$("legal").textContent = `© ${new Date().getFullYear()} ${SHOP_NAME}. All rights reserved.`;
+$("waFoot").href = waLink("Hi, I have a question about your products.");
+$("callFoot").href = "tel:+" + WHATSAPP;
+$("callFoot").textContent = "+" + WHATSAPP.replace(/^(\d{2})(\d{5})(\d{5})$/, "$1 $2 $3");
+if (SHOP_EMAIL) { $("mailFoot").hidden = false; $("mailFoot").href = "mailto:" + SHOP_EMAIL; $("mailFoot").textContent = SHOP_EMAIL; }
+
+let toastTimer;
+function toast(text) { const t = $("toast"); t.textContent = text; t.classList.add("show"); clearTimeout(toastTimer); toastTimer = setTimeout(() => t.classList.remove("show"), 2300); }
+
+/* ---------- categories, nav, filters ---------- */
+function catList() {
+  const out = [], seen = new Set();
+  if (state.categories.length) state.categories.forEach(c => { if (c.name && !seen.has(c.name)) { seen.add(c.name); out.push({name: c.name, image: c.image || "", emoji: ""}); } });
+  else DEFAULT_CATS.forEach(([n, e]) => { seen.add(n); out.push({name: n, image: "", emoji: e}); });
+  state.products.forEach(p => { if (p.cat && !seen.has(p.cat)) { seen.add(p.cat); out.push({name: p.cat, image: "", emoji: ""}); } });
+  return out;
+}
+function renderCats() {
+  const l = catList();
+  $("cats").innerHTML = l.map(c => `<button class="cat${state.cat === c.name ? " on" : ""}" data-act="cat" data-cat="${esc(c.name)}"><i>${c.image ? `<img src="${esc(c.image)}" alt="" loading="lazy" decoding="async">` : c.emoji ? esc(c.emoji) : `<b>${esc(c.name.trim().charAt(0).toUpperCase())}</b>`}</i><b>${esc(c.name)}</b></button>`).join("");
+  $("mainnav").innerHTML = `<a href="#" data-act="home" class="${!state.cat && !state.offers && !$("filter").value ? "on" : ""}">Home</a>`
+    + l.slice(0, 5).map(c => `<a href="#" data-act="cat" data-cat="${esc(c.name)}" class="${state.cat === c.name ? "on" : ""}">${esc(c.name)}</a>`).join("")
+    + `<a href="#" data-act="offers" class="${state.offers ? "on" : ""}">Offers</a><a href="#" data-act="goto" data-to="footer">Contact</a>`;
+  $("footCats").innerHTML = l.slice(0, 6).map(c => `<button class="fl" data-act="cat" data-cat="${esc(c.name)}">${esc(c.name)}</button>`).join("");
+  const sel = $("catfilter"), keep = state.cat;
+  sel.innerHTML = `<option value="">All categories</option>` + l.map(c => `<option value="${esc(c.name)}">${esc(c.name)}</option>`).join("");
+  sel.value = l.some(c => c.name === keep) ? keep : "";
+}
+function visible() {
+  const q = $("filter").value.trim().toLowerCase(), s = $("sort").value;
+  const l = state.products.filter(p => (!state.cat || p.cat === state.cat) && (!q || ((p.name || "") + " " + (p.cat || "")).toLowerCase().includes(q)) && (!state.offers || discount(p) > 0));
+  if (s === "low") l.sort((a, b) => a.price - b.price);
+  else if (s === "high") l.sort((a, b) => b.price - a.price);
+  else if (state.offers) l.sort((a, b) => discount(b) - discount(a));
+  return l;
+}
+function actions(p) {
+  if (p.stock === false) return `<button class="add" disabled>Sold out</button>`;
+  const n = qty(p.id);
+  if (!n) return `<button class="add" data-act="add" data-id="${esc(p.id)}">＋ Add to Cart</button>`;
+  return `<div class="step"><button data-act="dec" data-id="${esc(p.id)}" aria-label="Remove one">−</button><span aria-live="polite">${n}</span><button data-act="inc" data-id="${esc(p.id)}" aria-label="Add one">＋</button></div>`;
+}
+const pic = p => p.image ? `<img src="${esc(p.image)}" alt="${esc(p.name)}" loading="lazy" decoding="async">` : `<span class="ph">❀</span>`;
+function card(p) {
+  const w = state.wish.includes(p.id), off = discount(p);
+  return `<article class="product"><button class="heart" data-act="wish" data-id="${esc(p.id)}" aria-pressed="${w}" aria-label="${w ? "Remove from wishlist" : "Add to wishlist"}">${w ? "♥" : "♡"}</button>
+    <div class="pic">${pic(p)}</div>
+    <div class="details"><h3>${esc(p.name)}</h3><div class="muted">${esc(p.cat || "")}</div>
+      <div class="prow"><span class="price">${money(p.price)}</span>${p.mrp > p.price ? `<s>${money(p.mrp)}</s><span class="off">${off}% OFF</span>` : ""}</div>
+      <div data-actions="${esc(p.id)}">${actions(p)}</div></div></article>`;
+}
+function render() {
+  if (!state.loaded) return;
+  const l = visible();
+  $("ptitle").textContent = state.offers ? "Offers" : state.cat ? state.cat : "Popular Products";
+  $("result").innerHTML = state.offers ? `${l.length} products · <span class="fnote"><button data-act="home">Clear</button></span>` : `${l.length} product${l.length === 1 ? "" : "s"}`;
+  $("grid").innerHTML = l.length ? l.map(card).join("") : `<div class="msgbox"><h3>${state.products.length ? "No matching products" : "Products are coming soon"}</h3><p>${state.products.length ? "Try a different word or category." : "Owner: add products from admin.html."}</p></div>`;
+}
+const msg = (h, t) => { $("grid").innerHTML = `<div class="msgbox"><h3>${h}</h3><p>${t}</p></div>`; };
+function skeleton() { $("grid").innerHTML = Array.from({length: 8}, () => `<div class="product sk"><div class="pic"></div><i></i><i></i></div>`).join(""); }
+function refreshActions(id) { const p = find(id); if (!p) return; document.querySelectorAll(`[data-actions="${CSS.escape(id)}"]`).forEach(el => el.innerHTML = actions(p)); }
+function go(sel) { $(sel).scrollIntoView({behavior: "smooth"}); }
+function pickCat(name, scroll) { state.cat = name; state.offers = false; $("filter").value = ""; $("search").value = ""; renderCats(); render(); if (scroll) go("products"); }
+function runSearch() { state.cat = ""; state.offers = false; $("filter").value = $("search").value; renderCats(); render(); go("products"); }
+
+/* ---------- banners (replace the hero when you add some in admin) ---------- */
+let slideTimer;
+function renderBanners() {
+  const bs = state.banners; $("bannerWrap").hidden = !bs.length; $("hero").hidden = !!bs.length;
+  clearInterval(slideTimer); if (!bs.length) return;
+  $("slides").innerHTML = bs.map((b, i) => `<button class="slide" data-act="banner" data-cat="${esc(b.cat || "")}" aria-label="Offer ${i + 1}"><img src="${esc(b.image)}" alt="" ${i ? 'loading="lazy"' : ""} decoding="async"></button>`).join("");
+  $("dots").innerHTML = bs.length > 1 ? bs.map((_, i) => `<button class="${i ? "" : "on"}" data-act="slide" data-i="${i}" aria-label="Offer ${i + 1}"></button>`).join("") : "";
+  $("slides").scrollLeft = 0;
+  if (bs.length > 1 && !matchMedia("(prefers-reduced-motion: reduce)").matches)
+    slideTimer = setInterval(() => { if (document.hidden) return; const s = $("slides"); s.scrollTo({left: ((Math.round(s.scrollLeft / s.clientWidth) + 1) % bs.length) * s.clientWidth, behavior: "smooth"}); }, 4500);
+}
+$("slides").addEventListener("scroll", () => { const s = $("slides"), i = Math.round(s.scrollLeft / Math.max(1, s.clientWidth)); document.querySelectorAll("#dots button").forEach((d, k) => d.classList.toggle("on", k === i)); }, {passive: true});
+
+/* ---------- cart / wishlist drawer ---------- */
+function openDrawer(mode) { state.mode = mode; $("overlay").style.display = "block"; document.body.classList.add("lock"); drawDrawer(); }
+function closeDrawer() { $("overlay").style.display = "none"; document.body.classList.remove("lock"); }
+function updateBadges() {
+  const n = itemCount();
+  $("count").textContent = n; $("floatcount").textContent = n;
+  $("wcount").textContent = state.wish.length ? `(${state.wish.length})` : "";
+}
+function setQty(id, n) {
+  if (n <= 0) delete state.cart[id]; else state.cart[id] = n;
+  store.set("cart", state.cart); updateBadges(); refreshActions(id);
+  if ($("overlay").style.display === "block") { if (state.mode === "cart") drawLines(); else if (state.mode === "wish") drawWishList(); }
+}
+const saved = store.get("customer", {});
+function drawDrawer() {
+  if (state.mode === "wish") { $("dTitle").textContent = "Wishlist"; return drawWishList(); }
+  if (state.mode === "account") return drawAccount();
+  $("dTitle").textContent = "Your Cart";
+  $("dBody").innerHTML = `<div id="lines"></div><div id="checkout"></div>`;
+  drawLines(true);
+}
+function drawWishList() {
+  const l = state.wish.map(find).filter(Boolean);
+  $("dBody").innerHTML = l.length ? l.map(p => `<div class="line"><span><b>${esc(p.name)}</b><br>${money(p.price)}${p.mrp > p.price ? ` <span class="off">${discount(p)}% OFF</span>` : ""}</span><span style="min-width:120px;text-align:right" data-actions="${esc(p.id)}">${actions(p)}<br><button class="rm" data-act="wish" data-id="${esc(p.id)}">Remove</button></span></div>`).join("")
+    : `<p class="muted" style="font-size:14px;padding:20px 0">Your wishlist is empty. Tap the ♡ on any product to save it here.</p>`;
+}
+function drawLines(first) {
+  const ids = Object.keys(state.cart).filter(id => find(id));
+  $("dTitle").textContent = ids.length ? `Your Cart (${itemCount()})` : "Your Cart";
+  if (!ids.length) { $("lines").innerHTML = `<p class="muted" style="font-size:14px;padding:20px 0">Your cart is empty.</p><button class="wide" data-act="close">Continue shopping</button>`; $("checkout").innerHTML = ""; return; }
+  const s = sub(), d = delivery(), total = s + d, need = FREE_DELIVERY_ABOVE - s;
+  $("lines").innerHTML = ids.map(id => { const p = find(id); return `<div class="line"><span><b>${esc(p.name)}</b><br>${money(p.price)} × ${state.cart[id]} = <b>${money(p.price * state.cart[id])}</b><br><button class="rm" data-act="remove" data-id="${esc(id)}">Remove</button></span><span><button data-act="dec" data-id="${esc(id)}" aria-label="Remove one">−</button> ${state.cart[id]} <button data-act="inc" data-id="${esc(id)}" aria-label="Add one">＋</button></span></div>`; }).join("")
+    + (d && need > 0 ? `<div class="nudge">Add ${money(need)} more for free delivery.</div>` : "")
+    + `<div class="sum"><div><span>Subtotal</span><span>${money(s)}</span></div><div><span>Delivery</span><span>${d ? money(d) : "Free"}</span></div><div class="t"><span>Total</span><span>${money(total)}</span></div></div>`;
+  if (first || !$("form")) {
+    $("checkout").innerHTML = `<form id="form" novalidate autocomplete="on">
+      ${state.user ? `<p class="muted" style="font-size:13px;margin:12px 0 0">Ordering as ${esc(state.user.email || state.user.displayName)}. This order will show in My Account.</p>` : `<p class="muted" style="font-size:13px;margin:12px 0 0">Have an account? <button type="button" class="rm" data-act="login">Log in with Google</button> to track your orders, or just continue as a guest.</p>`}
+      <h3>Delivery details · டெலிவரி விவரம்</h3>
+      <div class="f" data-f="name"><label for="cname">Full name</label><input id="cname" autocomplete="name" value="${esc(saved.name || state.user?.displayName || "")}"><div class="err">Enter your name.</div></div>
+      <div class="f" data-f="phone"><label for="cphone">Mobile number</label><input id="cphone" inputmode="numeric" autocomplete="tel-national" maxlength="12" placeholder="10 digit number" value="${esc(saved.phone || "")}"><div class="err">Enter a valid 10 digit mobile number.</div></div>
+      <div class="f" data-f="addr"><label for="caddr">Address</label><textarea id="caddr" rows="3" autocomplete="street-address" placeholder="House number, street, area, town">${esc(saved.addr || "")}</textarea><div class="err">Enter your delivery address.</div></div>
+      <div class="f" data-f="pin"><label for="cpin">Pincode</label><input id="cpin" inputmode="numeric" autocomplete="postal-code" maxlength="6" placeholder="6 digit pincode" value="${esc(saved.pin || "")}"><div class="err">Enter a valid 6 digit pincode.</div></div>
+      <h3>Payment</h3>
+      ${RAZORPAY_KEY_ID.includes("xxxx") ? "" : `<label class="pay"><input type="radio" name="pay" value="online" checked><span><b>Pay online</b><small>UPI, cards and net banking through Razorpay</small></span></label>`}
+      <label class="pay"><input type="radio" name="pay" value="cod"${RAZORPAY_KEY_ID.includes("xxxx") ? " checked" : ""}><span><b>Cash on delivery</b><small>Pay when your order arrives</small></span></label>
+      <button type="button" class="wide" id="placeBtn" data-act="place"></button>
+      <button type="button" class="wide wa" data-act="waorder">Order through WhatsApp</button>
+    </form>`;
+    document.querySelectorAll("#form .f input, #form .f textarea").forEach(i => i.addEventListener("input", () => i.closest(".f")?.classList.remove("bad")));
+    document.querySelectorAll('input[name="pay"]').forEach(r => r.onchange = setPlaceLabel);
+  }
+  setPlaceLabel();
+}
+function setPlaceLabel() {
+  const b = $("placeBtn"); if (!b || b.disabled) return;
+  const total = sub() + delivery(), online = document.querySelector('input[name="pay"]:checked')?.value === "online";
+  b.textContent = online ? `Pay ${money(total)}` : `Place order · ${money(total)}`;
+}
+
+/* ---------- wishlist ---------- */
+function toggleWish(id) {
+  const i = state.wish.indexOf(id); if (i >= 0) state.wish.splice(i, 1); else state.wish.push(id);
+  store.set("wish", state.wish);
+  const on = state.wish.includes(id);
+  document.querySelectorAll(`.heart[data-id="${CSS.escape(id)}"]`).forEach(h => { h.textContent = on ? "♥" : "♡"; h.setAttribute("aria-pressed", String(on)); });
+  updateBadges(); if (on) toast("Saved to your wishlist");
+  if ($("overlay").style.display === "block" && state.mode === "wish") drawWishList();
+}
+
+/* ---------- checkout ---------- */
+const db = (() => { try { return getFirestore(initializeApp(firebaseConfig)); } catch (e) { return null; } })();
+const auth = (() => { try { return db ? getAuth(db.app) : null; } catch (e) { return null; } })();
+const firstName = () => (state.user?.displayName || state.user?.email || "Account").split(/[ @]/)[0];
+function updateAcct() { $("acctBtn").textContent = state.user ? "♙ " + firstName() : "♙ Login"; }
+if (auth) onAuthStateChanged(auth, async u => {
+  state.user = u; updateAcct();
+  if (u) { try { await setDoc(doc(db, "users", u.uid), {name: u.displayName || "", email: u.email || "", lastLogin: serverTimestamp()}, {merge: true}); } catch (e) {} }
+  if ($("overlay").style.display === "block") {
+    if (state.mode === "account") drawAccount();
+    else if (state.mode === "cart" && $("form")) { Object.assign(saved, {name: $("cname").value, phone: $("cphone").value, addr: $("caddr").value, pin: $("cpin").value}); drawLines(true); }
+  }
+});
+async function login() {
+  if (!auth) return toast("Shop setup is not finished.");
+  try { await signInWithPopup(auth, new GoogleAuthProvider()); toast("Logged in"); }
+  catch (e) { toast(e.code === "auth/popup-closed-by-user" || e.code === "auth/cancelled-popup-request" ? "Login cancelled" : e.code === "auth/popup-blocked" ? "Please allow pop-ups, or open the shop in Chrome." : "Could not log in. Please try again."); }
+}
+const STATUS_TXT = {"new": ["Order received", ""], "payment pending": ["Payment pending", ""], "paid": ["Paid", "ok"], "packed": ["Packed", "ok"], "shipped": ["On the way", "ok"], "delivered": ["Delivered", "ok"], "cancelled": ["Cancelled", "bad"], "payment cancelled": ["Payment cancelled", "bad"]};
+async function drawAccount() {
+  $("dTitle").textContent = "My Account";
+  if (!state.user) {
+    $("dBody").innerHTML = `<p style="line-height:1.6;color:#555">Log in to see your past orders and track them. You can also order without logging in.</p><button class="gbtn" data-act="login"><b style="color:#4285f4;font-size:18px">G</b> Continue with Google</button>`;
+    return;
+  }
+  const u = state.user;
+  $("dBody").innerHTML = `<p style="margin:6px 0 2px"><b>${esc(u.displayName || "Welcome")}</b><br><span class="muted">${esc(u.email || "")}</span></p><h3>My orders · என் ஆர்டர்கள்</h3><div id="myOrders" class="muted" style="padding:10px 0">Loading…</div><button class="wide wa" data-act="logout">Log out</button>`;
+  try {
+    const s = await getDocs(query(collection(db, "orders"), where("uid", "==", u.uid)));
+    if (state.user?.uid !== u.uid || state.mode !== "account") return;
+    const l = s.docs.map(d => ({id: d.id, ...d.data()})).sort((a, b) => (b.createdAt?.seconds || 9e9) - (a.createdAt?.seconds || 9e9));
+    $("myOrders").outerHTML = `<div id="myOrders">` + (l.length ? l.map(o => {
+      const st = STATUS_TXT[o.status] || [o.status, ""], when = o.createdAt?.seconds ? new Date(o.createdAt.seconds * 1000).toLocaleDateString("en-IN", {day: "numeric", month: "short", year: "numeric"}) : "Just now";
+      return `<div class="ord"><div class="r"><b>${money(o.total)} · ${o.mode === "online" ? "Online" : "Cash on delivery"}</b><span class="chip ${st[1]}">${esc(st[0])}</span></div><div class="muted">${esc(when)}</div><div>${(o.items || []).map(i => `${esc(i.name)} × ${esc(i.qty)}`).join("<br>")}</div></div>`;
+    }).join("") : `<p class="muted" style="font-size:14px">No orders yet. Your next order will appear here.</p>`) + `</div>`;
+  } catch (e) {
+    if ($("myOrders")) $("myOrders").textContent = "Could not load your orders right now.";
+  }
+}
+function validate() {
+  const v = {name: $("cname").value.trim(), phone: $("cphone").value.replace(/\D/g, "").slice(-10), addr: $("caddr").value.trim(), pin: $("cpin").value.trim()};
+  const rules = {name: v.name.length >= 2, phone: /^[6-9]\d{9}$/.test(v.phone), addr: v.addr.length >= 8, pin: /^\d{6}$/.test(v.pin)};
+  const input = {name: "cname", phone: "cphone", addr: "caddr", pin: "cpin"};
+  let first = null;
+  for (const k in rules) { document.querySelector(`.f[data-f="${k}"]`).classList.toggle("bad", !rules[k]); if (!rules[k] && !first) first = $(input[k]); }
+  if (first) { first.focus(); first.scrollIntoView({block: "center", behavior: "smooth"}); return null; }
+  return v;
+}
+function orderText(o, payText) {
+  let t = `*New order - ${SHOP_NAME}*\n\n`;
+  o.items.forEach(i => { t += `• ${i.name} × ${i.qty} = ${money(i.price * i.qty)}\n`; });
+  t += `\nSubtotal: ${money(o.subtotal)}\nDelivery: ${o.delivery ? money(o.delivery) : "Free"}\n*Total: ${money(o.total)}*`;
+  if (o.name) t += `\n\nName: ${o.name}\nPhone: ${o.phone}\nAddress: ${o.address}`;
+  return t + (payText ? `\n\n${payText}` : "");
+}
+function cartItems() { return Object.keys(state.cart).filter(id => find(id)).map(id => { const p = find(id); return {id, name: p.name, price: p.price, qty: state.cart[id]}; }); }
+function showDone(o, payText, mainText) {
+  state.mode = "done"; $("dTitle").textContent = "Order placed";
+  $("dBody").innerHTML = `<div class="center"><div class="okmark">✓</div><h2 style="font:bold 24px Georgia;color:var(--wine);margin:0">Thank you, ${esc(o.name.split(" ")[0])}!</h2>
+    <p style="color:#666;line-height:1.6">Your order of <b>${money(o.total)}</b> is saved. ${esc(mainText)}.<br>${state.user ? " You can see it any time under My Account." : ""} Send the details on WhatsApp so we can confirm it quickly.</p>
+    <a class="btn" style="display:block;border-radius:8px;text-decoration:none;padding:13px;text-align:center" target="_blank" rel="noopener" href="${esc(waLink(orderText(o, payText)))}">Send on WhatsApp</a>
+    <button class="wide wa" data-act="close">Continue shopping</button></div>`;
+}
+async function place() {
+  const items = cartItems(); if (!items.length) return;
+  const v = validate(); if (!v) return;
+  if (!db) return toast("Shop setup is not finished.");
+  const mode = document.querySelector('input[name="pay"]:checked').value;
+  store.set("customer", {name: v.name, phone: v.phone, addr: v.addr, pin: v.pin});
+  const s = sub(), d = delivery(), total = s + d;
+  const order = {items, name: v.name, phone: v.phone, address: `${v.addr}, ${v.pin}`, subtotal: s, delivery: d, total, mode, status: mode === "online" ? "payment pending" : "new", createdAt: serverTimestamp()};
+  if (state.user) { order.uid = state.user.uid; order.email = state.user.email || ""; }
+  const btn = $("placeBtn"); btn.disabled = true; btn.textContent = "Placing order…";
+  const reset = () => { btn.disabled = false; setPlaceLabel(); };
+  let ref;
+  try { ref = await addDoc(collection(db, "orders"), order); } catch (e) { reset(); return toast("Could not place the order. Please try again."); }
+  const finish = () => { state.cart = {}; store.set("cart", {}); updateBadges(); render(); };
+  if (mode === "cod") { finish(); return showDone(order, "Payment: Cash on delivery", "You will pay on delivery"); }
+  if (typeof Razorpay === "undefined") { reset(); return toast("Online payment is not available right now. Try cash on delivery."); }
+  const rzp = new Razorpay({
+    key: RAZORPAY_KEY_ID, amount: total * 100, currency: "INR", name: SHOP_NAME, description: "Order payment",
+    prefill: {name: v.name, contact: v.phone}, theme: {color: "#84133f"},
+    handler: async r => {
+      try { await updateDoc(doc(db, "orders", ref.id), {status: "paid", paymentId: r.razorpay_payment_id}); } catch (e) {}
+      finish(); showDone(order, `Payment: PAID online (ID: ${r.razorpay_payment_id})`, "Payment received");
+    },
+    modal: {ondismiss: async () => { reset(); try { await updateDoc(doc(db, "orders", ref.id), {status: "payment cancelled"}); } catch (e) {} }}
+  });
+  rzp.on("payment.failed", () => toast("Payment failed. Please try again."));
+  rzp.open();
+}
+function waOrder() {
+  const items = cartItems(); if (!items.length) return toast("Your cart is empty.");
+  const s = sub(), d = delivery();
+  window.open(waLink(orderText({items, subtotal: s, delivery: d, total: s + d}, "Please confirm availability and delivery.")), "_blank", "noopener");
+}
+
+/* ---------- events ---------- */
+document.addEventListener("click", e => {
+  const t = e.target.closest("[data-act]"); if (!t) return;
+  if (t.dataset.act === "overlay" && e.target !== t) return;
+  if (t.tagName === "A" && t.getAttribute("href") === "#") e.preventDefault();
+  const id = t.dataset.id;
+  switch (t.dataset.act) {
+    case "add": { setQty(id, qty(id) + 1); toast(`${find(id).name} added to cart`); break; }
+    case "inc": setQty(id, qty(id) + 1); break;
+    case "dec": setQty(id, qty(id) - 1); break;
+    case "remove": setQty(id, 0); break;
+    case "wish": toggleWish(id); break;
+    case "cart": openDrawer("cart"); break;
+    case "account": openDrawer("account"); break;
+    case "login": login(); break;
+    case "logout": signOut(auth).then(() => { toast("Logged out"); closeDrawer(); }); break;
+    case "wishlist": openDrawer("wish"); break;
+    case "close": case "overlay": closeDrawer(); break;
+    case "cat": pickCat(t.dataset.cat, true); break;
+    case "home": pickCat("", false); scrollTo({top: 0, behavior: "smooth"}); break;
+    case "offers": state.offers = true; state.cat = ""; $("filter").value = ""; $("search").value = ""; renderCats(); render(); go("products"); break;
+    case "shop": go("products"); break;
+    case "goto": go(t.dataset.to); break;
+    case "search": runSearch(); break;
+    case "banner": if (t.dataset.cat) pickCat(t.dataset.cat, true); break;
+    case "slide": $("slides").scrollTo({left: Number(t.dataset.i) * $("slides").clientWidth, behavior: "smooth"}); break;
+    case "place": place(); break;
+    case "waorder": waOrder(); break;
+  }
+});
+addEventListener("keydown", e => { if (e.key === "Escape") closeDrawer(); });
+$("search").addEventListener("keydown", e => { if (e.key === "Enter") runSearch(); });
+$("filter").addEventListener("input", () => { state.offers = false; if ($("filter").value.trim()) state.cat = ""; renderCats(); render(); });
+$("catfilter").addEventListener("change", e => pickCat(e.target.value, false));
+$("sort").addEventListener("change", render);
+
+/* ---------- data ---------- */
+skeleton(); updateBadges(); renderCats();
+if (!db || Object.values(firebaseConfig).some(v => String(v).includes("PASTE_HERE"))) {
+  msg("Shop setup is not finished", "Paste your Firebase details into index.html (the EDIT THIS SECTION part).");
+} else {
+  setTimeout(() => { if (!state.loaded) msg("Cannot reach the product database", "Check that Firestore Database is created and the rules are published, then refresh."); }, 8000);
+  const byOrder = (a, b) => (a.order ?? 999) - (b.order ?? 999) || (a.createdAt?.seconds || 0) - (b.createdAt?.seconds || 0);
+  onSnapshot(collection(db, "categories"), s => { state.categories = s.docs.map(d => ({id: d.id, ...d.data()})).sort(byOrder); renderCats(); }, () => {});
+  onSnapshot(collection(db, "banners"), s => { state.banners = s.docs.map(d => ({id: d.id, ...d.data()})).filter(b => b.image).sort(byOrder); renderBanners(); }, () => {});
+  onSnapshot(collection(db, "products"), snap => {
+    state.loaded = true;
+    state.products = snap.docs.map(d => ({id: d.id, ...d.data()})).sort((a, b) => (b.createdAt?.seconds || 0) - (a.createdAt?.seconds || 0));
+    Object.keys(state.cart).forEach(id => { if (!find(id)) delete state.cart[id]; });
+    state.wish = state.wish.filter(id => find(id));
+    store.set("cart", state.cart); store.set("wish", state.wish);
+    renderCats(); render(); updateBadges();
+    if ($("overlay").style.display === "block") { if (state.mode === "cart") drawLines(); else if (state.mode === "wish") drawWishList(); }
+  }, err => {
+    state.loaded = true;
+    msg("Could not load products", err && err.code === "permission-denied" ? "Firestore rules are blocking reads. Publish the rules from the setup steps." : "Check your internet and the Firebase details, then refresh.");
+  });
+}
+</script></body></html>
